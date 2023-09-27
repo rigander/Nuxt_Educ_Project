@@ -4,5 +4,12 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, '/'),
   },
-  devtools: { enabled: true }
+  css: ["~/assets/main.scss"],
+  devtools: { enabled: true },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })

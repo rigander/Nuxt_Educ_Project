@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  background-color: #2b2b2b;
+  color: green;
+}
+.main{
+  font-size: 88px;
+  font-weight: bold;
+}
