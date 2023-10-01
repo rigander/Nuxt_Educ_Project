@@ -1,16 +1,10 @@
 <template>
   <div class="main">
     <NuxtLayout>
-        <header>
-            <ul>
-                <li>
-                    <NuxtLink to="/"> Home </NuxtLink>
-                    <NuxtLink to="/events"> Events </NuxtLink>
-                </li>
-            </ul>
-        </header>
-        <NuxtPage/>
+        <Header />
+        <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
-
+<script setup>
+</script>
