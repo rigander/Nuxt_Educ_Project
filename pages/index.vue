@@ -1,8 +1,3 @@
 <template>
-  <div class="main">
-      index page
-      <Alert/>
-      <Profile/>
-      <ProfileHeaderAvatar/>
-  </div>
+  <div class="main"> Main page </div>
 </template>
