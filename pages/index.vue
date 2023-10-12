@@ -8,9 +8,13 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+    middleware: "auth",
+});
+
+
 const { sayHello } = useUtils();
 sayHello();
-
 // Plugin example instead of composable.
 const { $saySimon } = useNuxtApp();
 $saySimon('Simon');
