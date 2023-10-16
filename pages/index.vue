@@ -1,4 +1,7 @@
 <template>
+    <div>
+        <ContentDoc />
+    </div>
   <div class="main"> Main page
       <img src="@/assets/nuxt-is-cool.jpg" alt="" />
       <img src="/nuxt-space.jpg" alt="" />
