@@ -1,24 +1,16 @@
+<script setup lang="ts">
+const counter = useCounter();
+</script>
+
 <template>
-    <div>
-        <ContentDoc />
-    </div>
-  <div class="main"> Main page
-      <img src="@/assets/nuxt-is-cool.jpg" alt="" />
-      <img src="/nuxt-space.jpg" alt="" />
-      <IconsBell/>
-      <div>{{ $saySimon('Simon') }}</div>
-  </div>
+        <div id="main">
+          Counter: {{ counter }}
+          <button @click="counter++">+</button>
+          <button @click="counter--">-</button>
+        </div>
+  <Counter id="counter" />
 </template>
 
-<script setup lang="ts">
-definePageMeta({
-    middleware: "auth",
-});
 
 
-const { sayHello } = useUtils();
-sayHello();
-// Plugin example instead of composable.
-const { $saySimon } = useNuxtApp();
-$saySimon('Simon');
-</script>
+
