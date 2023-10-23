@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.8.5",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
     "sass": "^1.68.0",
     "vite": "^4.4.9"
   }
