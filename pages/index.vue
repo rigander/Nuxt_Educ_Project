@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const response = await $fetch('/api/hello');
+console.log(response);
 import { useCounterStore } from "../stores/myStore";
 const store = useCounterStore();
 console.log(store);
