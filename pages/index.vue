@@ -1,4 +1,15 @@
 <script setup lang="ts">
+useHead({
+    title: 'My Nuxt App',
+    meta: [
+        { name: 'description', content: 'My amazing site.' }
+    ],
+    bodyAttrs: {
+        class: 'test'
+    },
+    script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
+})
+
 const response = await $fetch('/api/hello');
 console.log(response);
 import { useCounterStore } from "../stores/myStore";
